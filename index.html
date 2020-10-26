@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Random Student Caller</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<script>
+function PeriodOne()
+{
+    var myarray= new Array("Nehemiah","Sylas","Thomas","Naiomi","Michael","Cecilia","Atiana","Nevaeh","Yvie","Sydney","Shams","Jameslee","Aurora","Ethan","Lawrence","Izayah","Matthew","Adrian","Lillian","Hailee","Dawson","Serriah","Leanne","Noah","Stryker","Joe","Aaron");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("p1").innerHTML=random;
+}
+function PeriodTwo()
+{
+    var myarray= new Array("Fernando","Jacob","Ethan","Devlin","Nikolai","Giovanna","Zoe","Kingston","Luke","Adrian","Jacob","Damian","Orion","Cayden","Ethan","Alicia","Sara","Keira","Leah","Jordan","Nevaeh","Eva","Tammany","Pietra","Caris","Evan","Amanii","Nicholas","Adisson","Sage");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("p2").innerHTML=random;
+}
+function PeriodThree()
+{
+    var myarray= new Array("Miguel","Elijah","Alyssa","Trey (Blue)","Emma","Dominic","Gizel","Destiny","Abriella","Trey (Neon Yellow)","Mariela","Koa","Khaya","Mykayla","Jacob","Cassidy","Ian","Sophie","Damian","Bao","Bella","Ethan","Dang","Ryan");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("p3").innerHTML=random;
+}
+function PeriodFour()
+{
+    var myarray= new Array("Liz","Shain","Augustine","Adrian","Zyanna","Isabella","AJ","Philip","Navaiah","Austin","Tyran","Theodore","Abi","Amarinth","Esme","Alex M.","Zachary","Alex N.","Talon","Ella","Izaiah","Caden","Bella","Nicholas","Kokomi");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("p4").innerHTML=random;
+}
+function PeriodFive()
+{
+    var myarray= new Array("Elijah","Jazlyn","Trey","Jubilee","Kailee","Zyanna","Jacob","Maxine","Theodore","Jameslee","Alexandria","Ethan","Elijah","Adrian","Evan","Bella","Stryker","Dang","Kokomi");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("p5").innerHTML=random;
+}
+function PeriodSeven()
+{
+    var myarray= new Array("Jazlyn","Sophia","Jubilee","Elektra","Logan","Annabelle","Anessa","Abigail","Jefferson","Maxine","Chance","Bekele","Sarya","Olivia","Amilia","Ethan","Jedidiah","Marely","Elijah","Emma","Jesus","Anais","Renee","Genesis","Lucien","Mark","Grace");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("p7").innerHTML=random;
+}
+
+</script>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Refresh</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="mt-5">No Volunteers? Okay, it's time for the Random Student Caller!</h2>
+        <p class="lead">You could be next!</p>
+
+        <h1 id="p1"></h1>
+        <h1 id="p2"></h1>
+        <h1 id="p3"></h1>
+        <h1 id="p4"></h1>
+        <h1 id="p5"></h1>
+        <h1 id="p7"></h1>
+
+        <input type="button" id="btnSymbol" value="Period One" onclick="PeriodOne();" />
+        <input type="button" id="btnSymbol" value="Period Two" onclick="PeriodTwo();" />
+        <input type="button" id="btnSymbol" value="Period Three" onclick="PeriodThree();" />
+        <input type="button" id="btnSymbol" value="Period Four" onclick="PeriodFour();" />
+        <input type="button" id="btnSymbol" value="Period Five" onclick="PeriodFive();" />
+        <input type="button" id="btnSymbol" value="Period Seven" onclick="PeriodSeven();" />
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
