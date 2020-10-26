@@ -56,21 +56,22 @@ function StationOne()
 {
     var myarray= new Array("Go to Sedimentary Rock", "Go to Sedimentary Rock", "Go to Sedimentary Rock", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station);
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("letter").innerHTML=random;
+   document.getElementById("1").innerHTML=random;
 }
 function GetSymbol()
 {
     var myarray= new Array("15 knots","10 knots","5 knots","warm front","cold front","occluded front","stationary front","no cloud cover","2/8th cloud cover","4/8th cloud cover","8/8th cloud","cumulus","altocumulus standing lenticulars","altostratus","altocumulus congestus","overcast cirrostratus","altocumulus semi-transparent","cirrus","pressure rising","pressure falling","thunderstorm","cumulonimbus with anvil"," rain","snow","drizzle"
 );
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("1").innerHTML=random;
+   document.getElementById("symbol").innerHTML=random;
 }
 </script>
 <body>
 <center>
 <h1>Rock Cycle Simulator</h1>
 <p id="1" >Station 1: </p>
-<input type="button" id="btnSymbol1" value="Roll" onclick="StationOne();" />
+<input type="button" id="btnSymbol1" value="Roll" onclick="StationOne()" />
+	
 <p id="symbol" >Symbol</p>
 <input type="button" id="btnSymbol" value="Roll" onclick="GetLetter();" />
   
