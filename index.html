@@ -20,37 +20,37 @@ function StationOne()
 {
     var myarray= new Array("Go to Sedimentary Rock", "Go to Sedimentary Rock", "Go to Sedimentary Rock", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("station1").innerHTML=random;
+   document.getElementById("s1").innerHTML=random;
 }
-function PeriodTwo()
+function StationTwo()
 {
     var myarray= new Array("Fernando","Jacob","Ethan","Devlin","Nikolai","Giovanna","Zoe","Kingston","Luke","Adrian","Jacob","Damian","Orion","Cayden","Ethan","Alicia","Sara","Keira","Leah","Jordan","Nevaeh","Eva","Tammany","Pietra","Caris","Evan","Amanii","Nicholas","Adisson","Sage");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("p2").innerHTML=random;
+   document.getElementById("s1").innerHTML=random;
 }
-function PeriodThree()
+function StationThree()
 {
     var myarray= new Array("Miguel","Elijah","Alyssa","Trey (Blue)","Emma","Dominic","Gizel","Destiny","Abriella","Trey (Neon Yellow)","Mariela","Koa","Khaya","Mykayla","Jacob","Cassidy","Ian","Sophie","Damian","Bao","Bella","Ethan","Dang","Ryan");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("p3").innerHTML=random;
+   document.getElementById("p1").innerHTML=random;
 }
-function PeriodFour()
+function StationFour()
 {
     var myarray= new Array("Liz","Shain","Augustine","Adrian","Zyanna","Isabella","AJ","Philip","Navaiah","Austin","Tyran","Theodore","Abi","Amarinth","Esme","Alex M.","Zachary","Alex N.","Talon","Ella","Izaiah","Caden","Bella","Nicholas","Kokomi");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("p4").innerHTML=random;
+   document.getElementById("s4").innerHTML=random;
 }
-function PeriodFive()
+function StationFive()
 {
     var myarray= new Array("Elijah","Jazlyn","Trey","Jubilee","Kailee","Zyanna","Jacob","Maxine","Theodore","Jameslee","Alexandria","Ethan","Elijah","Adrian","Evan","Bella","Stryker","Dang","Kokomi");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("p5").innerHTML=random;
+   document.getElementById("s5").innerHTML=random;
 }
-function PeriodSeven()
+function StationSeven()
 {
     var myarray= new Array("Jazlyn","Sophia","Jubilee","Elektra","Logan","Annabelle","Anessa","Abigail","Jefferson","Maxine","Chance","Bekele","Sarya","Olivia","Amilia","Ethan","Jedidiah","Marely","Elijah","Emma","Jesus","Anais","Renee","Genesis","Lucien","Mark","Grace");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("p7").innerHTML=random;
+   document.getElementById("s7").innerHTML=random;
 }
 
 </script>
@@ -71,21 +71,26 @@ function PeriodSeven()
         <h2 class="mt-5">Rock Cycle Simulator</h2>
         <p class="lead">Click the roll button once and follow the instructions.</p>
 
-        <h1 id="station1"></h1>
-        <h1 id="p2"></h1>
-        <h1 id="p3"></h1>
-        <h1 id="p4"></h1>
-        <h1 id="p5"></h1>
-        <h1 id="p7"></h1>
+        <h1 id="s1"></h1>
+        <h1 id="s2"></h1>
+        <h1 id="s3"></h1>
+        <h1 id="s4"></h1>
+        <h1 id="s5"></h1>
+        <h1 id="s7"></h1>
 
-        <input type="button" id="btnSymbol" value="Station 1" onclick="StationOne();" />
-        <input type="button" id="btnSymbol" value="Period Two" onclick="PeriodTwo();" />
-        <input type="button" id="btnSymbol" value="Period Three" onclick="PeriodThree();" />
-        <input type="button" id="btnSymbol" value="Period Four" onclick="PeriodFour();" />
-        <input type="button" id="btnSymbol" value="Period Five" onclick="PeriodFive();" />
-        <input type="button" id="btnSymbol" value="Period Seven" onclick="PeriodSeven();" />
-
-      </div>
+        <input type="button" id="btnSymbol" value="Station 1 Compaction and Cementation" onclick="StationOne();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationTwo();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationThree();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationFour();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationFour();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationFive();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationSix();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationSeven();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationEight();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationNine();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationTen();" />
+        <input type="button" id="btnSymbol" value="" onclick="StationEleven();" />
+        </div>
     </div>
   </div>
 
