@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>Weather Map Symbols Bingo Caller</title>
+<title>Rock Cycle Simulator</title>
 </head>
 <style>
 body {
@@ -52,9 +52,9 @@ p {
 }
 </style>
 <script>
-function GetLetter()
+function StationOne()
 {
-    var myarray= new Array("B","I","N","G", "O");
+    var myarray= new Array("Go to Sedimentary Rock", "Go to Sedimentary Rock", "Go to Sedimentary Rock", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station);
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("letter").innerHTML=random;
 }
@@ -69,10 +69,9 @@ function GetSymbol()
 <body>
 <center>
 <h1>Rock Cycle Simulator</h1>
-<p id="letter" >Letter</p>
-<input type="button" id="btnSymbol" value="Roll" onclick="GetSymbol(), GetLetter();" />
+<p id="letter" >Station 1: </p> <input type="button" id="btnSymbol" value="Roll" onclick="StationOne();" />
 <p id="symbol" >Symbol</p>
-<input type="button" id="btnSymbol" value="Roll" onclick="GetSymbol(), GetLetter();" />
+<input type="button" id="btnSymbol" value="Roll" onclick="GetLetter();" />
   
 <div id="footer">&#169;Nicholas Porter, 2020 | <a href="https://www.teacherspayteachers.com/Store/Middle-School-Earth-Science">https://www.teacherspayteachers.com/Store/Middle-School-Earth-Science</a></div>
 </center>
