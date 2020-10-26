@@ -1,6 +1,85 @@
 
 <html>
 <head>
+<title>Weather Map Symbols Bingo Caller</title>
+</head>
+<style>
+body {
+    font-size: 100%; /* start with a flexible baseline, more on this in the next section */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+@media screen and (max-width: 50em) {
+    h1 {
+        font-size:2em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    h1 {
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    h1 {
+        font-size:1.2em;
+    }
+}
+
+p {
+    font-size: 1.25em; /* 1.25em relative to a 16px baseline on the body will result in a 20px font size */
+}
+
+@media screen and (max-width: 40em) {
+    p {
+        font-size:90%;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    p {
+        font-size:80%;
+    }
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+}
+</style>
+<script>
+function GetLetter()
+{
+    var myarray= new Array("B","I","N","G", "O");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("letter").innerHTML=random;
+}
+function GetSymbol()
+{
+    var myarray= new Array("15 knots","10 knots","5 knots","warm front","cold front","occluded front","stationary front","no cloud cover","2/8th cloud cover","4/8th cloud cover","8/8th cloud","cumulus","altocumulus standing lenticulars","altostratus","altocumulus congestus","overcast cirrostratus","altocumulus semi-transparent","cirrus","pressure rising","pressure falling","thunderstorm","cumulonimbus with anvil"," rain","snow","drizzle"
+);
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+   document.getElementById("symbol").innerHTML=random;
+}
+</script>
+<body>
+<center>
+<h1>Weather Map Symbols Bingo Caller</h1>
+<p id="letter" >Letter</p>
+<p id="symbol" >Symbol</p>
+<input type="button" id="btnSymbol" value="Draw" onclick="GetSymbol(), GetLetter();" />
+<div id="footer">&#169;Nicholas Porter, 2020 | <a href="https://www.teacherspayteachers.com/Store/Middle-School-Earth-Science">https://www.teacherspayteachers.com/Store/Middle-School-Earth-Science</a></div>
+</center>
+</body>
+</html>
+
+------------------------------------
+<html>
+<head>
 <title>Rock Cycle Simulator</title>
 </head>
 <style>
