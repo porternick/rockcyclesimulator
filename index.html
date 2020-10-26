@@ -16,11 +16,11 @@
 </head>
 
 <script>
-function PeriodOne()
+function StationOne()
 {
-    var myarray= new Array("Nehemiah","Sylas","Thomas","Naiomi","Michael","Cecilia","Atiana","Nevaeh","Yvie","Sydney","Shams","Jameslee","Aurora","Ethan","Lawrence","Izayah","Matthew","Adrian","Lillian","Hailee","Dawson","Serriah","Leanne","Noah","Stryker","Joe","Aaron");
+    var myarray= new Array("Go to Sedimentary Rock", "Go to Sedimentary Rock", "Go to Sedimentary Rock", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("p1").innerHTML=random;
+   document.getElementById("station1").innerHTML=random;
 }
 function PeriodTwo()
 {
@@ -71,14 +71,14 @@ function PeriodSeven()
         <h2 class="mt-5">No Volunteers? Okay, it's time for the Random Student Caller!</h2>
         <p class="lead">You could be next!</p>
 
-        <h1 id="p1"></h1>
+        <h1 id="station1"></h1>
         <h1 id="p2"></h1>
         <h1 id="p3"></h1>
         <h1 id="p4"></h1>
         <h1 id="p5"></h1>
         <h1 id="p7"></h1>
 
-        <input type="button" id="btnSymbol" value="Period One" onclick="history.go(0);PeriodOne();" />
+        <input type="button" id="btnSymbol" value="Station 1" onclick="history.go(0);StationOne();" />
         <input type="button" id="btnSymbol" value="Period Two" onclick="PeriodTwo();" />
         <input type="button" id="btnSymbol" value="Period Three" onclick="PeriodThree();" />
         <input type="button" id="btnSymbol" value="Period Four" onclick="PeriodFour();" />
